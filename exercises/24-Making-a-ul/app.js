@@ -1,32 +1,15 @@
-let allColors = [
-	{label: 'Red', sexy: true},
-	{label: 'Pink', sexy: false},
-	{label: 'Orange', sexy: true},
-	{label: 'Brown', sexy: false},
-	{label: 'Pink', sexy: true},
-	{label: 'Violet', sexy: true},
-	{label: 'Purple', sexy: false},
-];
-
-function generateLI(color) {
-	// Your code here
-}
+let allColors = ["Red", "Blue", "Green", "Orange", "Pink", "Violet", "Brown"];
 
 function filterColors(color) {
-	// Your code here
+  let sexyColors = ["Red", "Orange", "Pink", "Violet"];
+  return sexyColors.includes(color);
 }
 
-function generateHTMLFromArray(array) {
-	
-	let filteredOptions = array.filter((filterColors));
-	let LIs = filteredOptions.map(generateLI);
-
-	let htmlString = '<ul>';
-	LIs.forEach(function(element) {
-		htmlString += element;
-	})
-	htmlString += '</ul>';
-	return htmlString;
+function generateLI(color) {
+  return `<li>${color}</li>`;
 }
 
-console.log(generateHTMLFromArray(allColors));
+let filteredColors = allColors.filter(filterColors);
+let htmlList = "<ul>" + filteredColors.map(generateLI).join('') + "</ul>";
+
+console.log(htmlList);

@@ -1,9 +1,20 @@
-// Your code here
+function lyricsGenerator(beats) {
+  let result = "";
+  let dropCounter = 0;
 
+  for (let i = 0; i < beats.length; i++) {
+    if (beats[i] === 0) {
+      result += "Boom ";
+      dropCounter = 0; // reinicia el conteo de drops
+    } else if (beats[i] === 1) {
+      result += "Drop the bass ";
+      dropCounter++;
+      if (dropCounter === 3) {
+        result += "¡¡¡Break the bass!!! ";
+        dropCounter = 0; // reinicia después del corte
+      }
+    }
+  }
 
-// Don't change anything below this line
-console.log(lyricsGenerator([0,0,1,1,0,0,0]))
-console.log(lyricsGenerator([0,0,1,1,1,0,0,0]))
-console.log(lyricsGenerator([0,0,0]))
-console.log(lyricsGenerator([1,0,1]))
-console.log(lyricsGenerator([1,1,1]))
+  return result.trim(); // quita espacio final
+}
