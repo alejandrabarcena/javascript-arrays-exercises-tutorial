@@ -1,3 +1,15 @@
-let myArray = [43,23,6,87,43,1,4,6,3,67,8,3445,3,7,5435,63,346,3,456,734,6,34];
+function findMax(arr) {
+    let max = arr[0]; // Inicializa con el primer número del array
 
-// Your code here
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]; // Reemplaza si encuentra uno mayor
+        }
+    }
+
+    return max;
+}
+
+// Ejemplo de prueba:
+let myArray = [5, 23, 12, 5435, 87, 32];
+console.log(findMax(myArray)); // ➜ 5435

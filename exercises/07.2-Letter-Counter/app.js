@@ -1,6 +1,16 @@
-let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bibendum turpis Curabitur scelerisque eros ultricies venenatis mi at tempor nisl Integer tincidunt accumsan cursus"
-let counts = {};
+const word = "Hello World";
+const counts = {};
 
-// Your code here
+for (let i = 0; i < word.length; i++) {
+  let char = word[i].toLowerCase();
+
+  if (char === " ") continue; // Ignorar espacios
+
+  if (counts[char] === undefined) {
+    counts[char] = 1;
+  } else {
+    counts[char]++;
+  }
+}
 
 console.log(counts);

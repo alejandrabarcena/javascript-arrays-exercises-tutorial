@@ -1,3 +1,8 @@
-let mix = [42, true, "towel", [2,1], 'hello', 34.4, {"name": "juan"}];
+let mix = [42, true, "hello", { name: "Alice" }, "42", 99, [1, 2, 3]];
+let types = [];
 
-// Your code here
+for (let i = 0; i < mix.length; i++) {
+  types.push(typeof mix[i]);
+}
+
+console.log(types);

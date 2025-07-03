@@ -1,9 +1,7 @@
-let arrayOfCelsiusValues = [-2, 34, 56, -10];
+let celsiusTemperatures = [ -2, 34, 56, -10 ];
 
-let arrayOfFahrenheitValues = arrayOfCelsiusValues.map(function(value) {
-	
-	// Add your code here and return the new value
-	
+let fahrenheitTemperatures = celsiusTemperatures.map(function(temp) {
+    return (temp * 9/5) + 32;
 });
 
-console.log(arrayOfFahrenheitValues);
+console.log(fahrenheitTemperatures);

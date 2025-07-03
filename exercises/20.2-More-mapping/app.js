@@ -1,5 +1,9 @@
-let myNumbers = [23,234,345,4356234,243,43,56,2];
+function myFunction(number) {
+  return number * 3;
+}
 
-// Your code here
+let myArray = [1, 2, 3, 4];
+
+let newArray = myArray.map(myFunction);
 
 console.log(newArray);

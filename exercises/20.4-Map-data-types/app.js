@@ -1,8 +1,10 @@
-let mixedDataTypes = ['1', '5', '45', '34', '343', '34', 6556, 323];
+let people = [
+  "Lebron", "Aaliyah", "Diamond", "Dominique", "Aliyah", "Jazmin",
+  19, 21
+];
 
-let newArray = mixedDataTypes.map(function(item) {
-	// Your code here
-	return item
+let dataTypes = people.map(function(element) {
+  return typeof element;
 });
 
-console.log(newArray);
+console.log(dataTypes);

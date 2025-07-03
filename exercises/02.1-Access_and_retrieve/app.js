@@ -1,8 +1,10 @@
-// Declaring the array
-let myArray = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+let days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
 
-// 1. print the 3rd item here
+// 1. Imprime el tercer elemento del array (índice 2)
+console.log(days[2]);  // 'wednesday'
 
-// 2. change the 'thursday' value to null here
+// 2. Cambia el valor "thursday" (índice 3) por null
+days[3] = null;
 
-// 3. print the position of step 2
+// 3. Imprime el nuevo valor en la posición 3
+console.log(days[3]);  // null

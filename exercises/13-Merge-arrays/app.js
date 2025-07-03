@@ -1,10 +1,9 @@
-let chunkOne = [ 'Lebron', 'Aaliyah', 'Diamond', 'Dominique', 'Aliyah', 'Jazmin', 'Darnell' ];
-let chunkTwo = [ 'Lucas', 'Jake', 'Scott', 'Amy', 'Molly', 'Hannah', 'Lucas' ];
+let array1 = ['Lebron', 'Aaliyah', 'Diamond', 'Dominique', 'Aliyah', 'Jazmin'];
+let array2 = ['Darnell', 'Lucas', 'Jake', 'Scott', 'Amy', 'Molly', 'Hannah', 'Lucas'];
 
-const mergeArrays = (firstArray, secondArray) => {
-    let newArray = []
-    // Your code here
-    return newArray
+function mergeArrays(arr1, arr2) {
+    return [...arr1, ...arr2];
 }
 
-console.log(mergeArrays(chunkOne, chunkTwo));
+let mergedArray = mergeArrays(array1, array2);
+console.log(mergedArray);

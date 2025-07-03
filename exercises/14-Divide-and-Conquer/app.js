@@ -1,3 +1,17 @@
-let listOfNumbers = [4, 80, 85, 59, 37, 25, 5, 64, 66, 81, 20, 64, 41, 22, 76, 76, 55, 96, 2, 68];
+function mergeTwoList(arr) {
+    let odd = [];   // Arreglo para impares
+    let even = [];  // Arreglo para pares
 
-// Your code here
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);   // Es par
+        } else {
+            odd.push(arr[i]);    // Es impar
+        }
+    }
+
+    return odd.concat(even);  // Une primero impares, luego pares
+}
+
+// Ejemplo de prueba
+console.log(mergeTwoList([1, 2, 33, 10, 20, 4]));
