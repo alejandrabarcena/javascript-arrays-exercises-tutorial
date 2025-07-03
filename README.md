@@ -1,6 +1,6 @@
 # 📘 JavaScript Arrays Exercises – Soluciones con Explicaciones
 
-¡Bienvenida, Alejandra! Este README contiene el índice de retos realizados (1 al 25) con:
+ Este README contiene el índice de retos realizados (1 al 25) con:
 
 ✅ Título del reto  
 ✅ Instrucciones resumidas  
